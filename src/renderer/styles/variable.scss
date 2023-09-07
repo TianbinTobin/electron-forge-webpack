@@ -1,0 +1,47 @@
+:root {
+  // Icon（图标）
+  // 常规
+  --color--icon-brand: #555cfd;
+  // 用于强调/主图标
+  --color--icon-primary: #414142;
+  // 用于次要/辅助图标
+  --color--icon-secondary: #a2a4a8;
+  // 用于辅助/禁用/弱化图标
+  --color--icon-tertiary: #d0d2d4;
+
+  // Text（字体）
+  // 用于标题正文等强调性文档
+  --color--text-primary: #19191a;
+  --color--text-primary-assist: #7a91fe;
+
+  // 点击
+  --color--text-brand-press: #4a50dc;
+  // 常规
+  --color--text-brand-normal: #555cfd;
+  // 悬浮
+  --color--text-brand-hover: #616ffe;
+
+  // 用于次要/描述/操作性文本
+  --color--text-secondary: #555557;
+  // 用于帮助和说明类文本
+  --color--text-assist: #8b8c8f;
+  // 用于帮助和说明类文本
+  --color--text-tertiary: #8b8c8f;
+  // 用于提示文本
+  --color--text-quaternary: #b7b9bd;
+  // 用于输入框/禁用文字
+  --color--text-disable: #b7b9bd;
+  // 用于叠加在按钮等反色情况
+  --color--text-contrary: #ffffff;
+
+  // （容器背景）：用于容器背景色（最常用）
+  --color--bg-body: #ffffff;
+  // （页面背景）:用于页面最基本最底层颜色, 如画布等
+  --color--bg-body-base: #edeef0;
+  //  overlay（模块背景）：用于模块背景色，原则上该颜色只能叠加于容器背景上使用
+  --color--bg-body-overlay: #f7f7f9;
+  --color--bg-danger-normal: #f43529;
+
+  // 用于icon/纯文字按钮/菜单列表的悬浮背景 输入框输入状态背景
+  --color--bg-hover: rgba(18, 17, 42, 0.05);
+}

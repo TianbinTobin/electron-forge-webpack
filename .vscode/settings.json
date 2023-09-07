@@ -1,0 +1,7 @@
+{
+  "cSpell.words": ["asar", "boardmix", "codesign", "sortablejs"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "i18n-ally.disabled": true
+}

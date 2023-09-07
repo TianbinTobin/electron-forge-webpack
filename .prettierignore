@@ -1,0 +1,5 @@
+/dist/
+/release/
+/buildResources/
+/node_modules/
+yarn.lock

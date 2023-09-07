@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "allowJs": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*", "scripts/**/*"],
+  "exclude": ["node_modules/**/*"],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  }
+}
