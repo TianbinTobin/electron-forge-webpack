@@ -79,14 +79,16 @@ const config: ForgeConfig = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
     new WebpackPlugin({
+      devContentSecurityPolicy:
+        "default-src 'none'; img-src 'self' https: data:; media-src 'none'; child-src 'self'; object-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https:; font-src 'self' https:;",
       devServer: {
-        // Disallow browser from opening/reloading with HMR in development mode.
         hot: 'only',
         open: false,
         liveReload: false,
       },
       mainConfig,
       renderer: {
+        nodeIntegration: true,
         config: rendererConfig,
         entryPoints: [
           {
@@ -99,6 +101,7 @@ const config: ForgeConfig = {
           },
           {
             name: 'main_view',
+            nodeIntegration: false,
             preload: {
               js: './src/preload/main-view.ts',
             },

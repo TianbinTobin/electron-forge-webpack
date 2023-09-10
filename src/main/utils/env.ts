@@ -33,35 +33,35 @@ class GlobalAppEnv {
   }
   /** 是否开启开发者工具 */
   get ENABLE_DEVTOOLS() {
-    return process.env.DEFINE_ENABLE_DEVTOOLS === 'enabled';
+    return process.env.DEFINE_ENABLE_DEVTOOLS;
   }
   /** 是否开启自动更新 */
   get ENABLE_AUTO_UPDATER() {
-    return process.env.DEFINE_ENABLE_AUTO_UPDATER === 'enabled' && !process.mas && !process.windowsStore;
+    return process.env.DEFINE_ENABLE_AUTO_UPDATER && !process.mas && !process.windowsStore;
   }
   /** 版本代码 */
   get APP_EDITION_CODE() {
-    return process.env.DEFINE_APP_EDITION || 'beta';
+    return process.env.DEFINE_BUILD_EDITION;
   }
   /** 是否内部测试版本 */
   get IS_BETA_EDITION() {
-    return process.env.DEFINE_APP_EDITION === 'beta';
+    return process.env.DEFINE_BUILD_EDITION === 'beta';
   }
   /** 是否联想应用版本 */
   get IS_LENOVO_EDITION() {
-    return process.env.DEFINE_APP_EDITION === 'lenovo';
+    return process.env.DEFINE_BUILD_EDITION === 'lenovo';
   }
   /** 是否标准版本 */
   get IS_STANDARD_EDITION() {
-    return process.env.DEFINE_APP_EDITION === 'standard';
+    return process.env.DEFINE_BUILD_EDITION === 'standard';
   }
   /** 是否国际版 */
   get IS_INTERNATIONAL_EDITION() {
-    return process.env.DEFINE_APP_EDITION === 'international';
+    return process.env.DEFINE_BUILD_EDITION === 'international';
   }
   /** 是否私有化版本 */
-  get IS_PRIVATIZED_EDITION() {
-    return process.env.DEFINE_APP_EDITION === 'privatization';
+  get IS_PRIVATIZATION_EDITION() {
+    return process.env.DEFINE_BUILD_EDITION === 'privatization';
   }
 
   get PLATFORM_NAME() {
@@ -88,7 +88,7 @@ class GlobalAppEnv {
     this.#WEB_VERSION = data.version;
   }
   #getBaseURL(appEnv: string) {
-    if (this.IS_PRIVATIZED_EDITION) {
+    if (this.IS_PRIVATIZATION_EDITION) {
       return setting.store.serverUrl;
     }
     switch (appEnv) {

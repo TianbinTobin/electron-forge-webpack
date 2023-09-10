@@ -15,7 +15,8 @@ export const defaultBrowserWindowOptions: BrowserWindowConstructorOptions = {
   webPreferences: {
     sandbox: false,
     nodeIntegration: true,
-    contextIsolation: true,
+    nodeIntegrationInWorker: true,
+    contextIsolation: false,
     preload: ROOT_PATH.preloadWindow,
   },
 };
@@ -41,7 +42,8 @@ export const defaultDialogBrowserWindowOptions: BrowserWindowConstructorOptions 
   webPreferences: {
     sandbox: false,
     nodeIntegration: true,
-    contextIsolation: true,
+    nodeIntegrationInWorker: true,
+    contextIsolation: false,
     preload: ROOT_PATH.preloadWindow,
   },
 };

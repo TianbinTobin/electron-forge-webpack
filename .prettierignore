@@ -1,5 +1,4 @@
 /dist/
-/release/
-/buildResources/
+/benchmark/
 /node_modules/
 yarn.lock

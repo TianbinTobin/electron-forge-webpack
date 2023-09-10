@@ -11,7 +11,6 @@ import log from '../utils/logger';
 import { sensors } from '../utils/sensors';
 import system from '../utils/system';
 import { AppURL } from '../utils/url';
-// import { updateRenderMemoryDetail } from '@/perf';
 
 const logger = log.scope('Channel::View');
 

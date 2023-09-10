@@ -69,7 +69,7 @@ export function createApplicationMenu() {
         click() {
           appManager.openPrivate();
         },
-        visible: AppEnv.IS_PRIVATIZED_EDITION,
+        visible: AppEnv.IS_PRIVATIZATION_EDITION,
       },
       {
         label: i18next.t('环境检测'),

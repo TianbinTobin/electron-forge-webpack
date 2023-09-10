@@ -48,7 +48,7 @@ async function onReady() {
   } catch (error) {
     logger.error('[Session::clearHostResolverCache]: ', error);
   } finally {
-    if (AppEnv.IS_PRIVATIZED_EDITION && !setting.store.serverUrl) {
+    if (AppEnv.IS_PRIVATIZATION_EDITION && !setting.store.serverUrl) {
       appManager.openPrivate();
     } else {
       // 创建窗口

@@ -1,6 +1,5 @@
 node_modules
 dist
 out
-release
-installer
+benchmark
 .gitignore
