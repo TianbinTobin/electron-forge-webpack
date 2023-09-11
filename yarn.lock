@@ -304,7 +304,7 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/maker-base@6.4.2", "@electron-forge/maker-base@^6.4.2":
+"@electron-forge/maker-base@6.4.2":
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.4.2.tgz#0403f12773f816089f37c42792025162e067defe"
   integrity sha512-zW3GH+LqDK9nxQmQEFkJPR8RqiX0lVk6a4mXll3ngujN1fPevO4ivUAWmaEVeC1dH/hXbN7s9m0S6a37MigftQ==
@@ -413,7 +413,7 @@
   dependencies:
     "@electron-forge/shared-types" "6.4.2"
 
-"@electron-forge/shared-types@6.4.2", "@electron-forge/shared-types@^6.4.2":
+"@electron-forge/shared-types@6.4.2":
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.4.2.tgz#ffc25a21d1bc7e6cb8fcf8dc1e1767c6a8c52d02"
   integrity sha512-DKOUMsdTXZIq8XiqY0Hi3C+dam/JKUnvfBjwcUeyZqPdgEE1qry8xZmmjorXuLrRf1Jq8rhxYGQInSK4af0QYw==

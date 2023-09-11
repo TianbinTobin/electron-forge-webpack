@@ -9,4 +9,4 @@ import { spawnForge } from './utils';
 configDotenv({ path: path.join(process.cwd(), './env/.env') });
 configDotenv({ path: path.join(process.cwd(), `./env/.env.beta`), override: true });
 
-spawnForge(['start', '--enable-logging', '--inspect-electron', '--'], { detached: true });
+spawnForge(['start', '--enable-logging', '--inspect-electron', '--']);
